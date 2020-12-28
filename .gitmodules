@@ -1,3 +1,6 @@
 [submodule "AntidictAPI"]
 	path = AntidictAPI
 	url = https://github.com/slowwavesleep/AntidictAPI.git
+[submodule "antidict-frontend"]
+	path = antidict-frontend
+	url = https://github.com/wksmirnowa/antidict-frontend.git
