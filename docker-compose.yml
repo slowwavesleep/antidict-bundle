@@ -1,0 +1,29 @@
+version: "3.7"
+    
+networks:
+    antidict:
+        driver: bridge
+
+services:
+
+    api:
+        container_name: api
+        build: AntidictAPI
+        ports:
+          - "5000:5000"
+        volumes:
+          - ./AntidictAPI/models:/app/models
+        restart: always
+        networks:
+            - antidict
+
+    web:
+        container_name: web
+        build: antidict-frontend
+        depends_on:
+            - api
+        ports:
+            - "80:80"
+        restart: always
+        networks:
+            - antidict

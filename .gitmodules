@@ -1,0 +1,3 @@
+[submodule "AntidictAPI"]
+	path = AntidictAPI
+	url = https://github.com/slowwavesleep/AntidictAPI.git
