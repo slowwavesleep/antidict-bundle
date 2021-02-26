@@ -13,7 +13,7 @@ services:
           - "5000:5000"
         volumes:
           - ./AntidictAPI/models:/app/models
-        restart: always
+        restart: "no"
         networks:
             - antidict
 
@@ -24,6 +24,6 @@ services:
             - api
         ports:
             - "80:80"
-        restart: always
+        restart: "no"
         networks:
             - antidict
